@@ -1,0 +1,9 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+$primary:mat-palette($mat-purple,800);
+$secn:mat-palette($mat-pink);
+
+$my-theme: mat-light-theme($primary,$secn);
+
+@include angular-material-theme($my-theme);
